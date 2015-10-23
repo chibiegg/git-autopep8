@@ -15,3 +15,5 @@ If you want to select only specific codes to scan for, use the
 Additional arguments to the pep8 program (e.g., ```--max-line-length=120```) can be added to the ```overrides``` list.
 
 This code was forked from [https://gist.github.com/810399](https://gist.github.com/810399) and [https://github.com/cbrueffer/pep8-git-hook](https://github.com/cbrueffer/pep8-git-hook).
+
+This software is released under the MIT License, see LICENSE.txt.
