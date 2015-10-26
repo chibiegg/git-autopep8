@@ -36,6 +36,12 @@ def autopep8(filepath):
 
 
 def main():
+    try:
+        import autopep8
+    except ImportError:
+        print("'autopep8' is required. Please install with `pip install autopep8`.", file=sys.stderr)
+        exit(1)
+
     modified = re.compile('^[AM]+\s+(?P<name>.*\.py)', re.MULTILINE)
     basedir = system('git', 'rev-parse', '--show-toplevel').decode("utf-8").strip()
     files = system('git', 'status', '--porcelain').decode("utf-8")
