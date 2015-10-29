@@ -37,7 +37,7 @@ def autopep8(filepath):
 
 def main():
     try:
-        import autopep8
+        import autopep8 as ap8
     except ImportError:
         print("'autopep8' is required. Please install with `pip install autopep8`.", file=sys.stderr)
         exit(1)
