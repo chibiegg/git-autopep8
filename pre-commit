@@ -50,6 +50,7 @@ def main():
     for name in files:
         filepath = os.path.join(basedir, name)
         autopep8(filepath)
+        system("git", "add", filepath)
 
 
 if __name__ == '__main__':
